@@ -31,6 +31,7 @@ namespace MyLeasing.Web.Data.Entities
         [Display(Name = "Cell Phone")]
         public string CellPhone { get; set; }
 
+        [MaxLength(100)]
         public string Address { get; set; }
 
         public string FullName => $"{FirstName} {LastName}";
